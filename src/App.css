@@ -1,0 +1,274 @@
+.page {
+  padding: 28px 20px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.brand {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pill {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-h);
+}
+
+.alert {
+  border: 1px solid #f0cfcf;
+  background: #fff6f6;
+  color: #7a1c1c;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  max-width: 460px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rowRight {
+  display: flex;
+  gap: 10px;
+}
+
+.muted {
+  color: var(--text);
+  margin-top: -10px;
+  margin-bottom: 14px;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--text-h);
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+  color: var(--text-h);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-h);
+  padding: 9px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow);
+}
+
+.btn.primary {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.btn.small {
+  padding: 6px 10px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.btn.danger {
+  border-color: #f0cfcf;
+  color: #7a1c1c;
+  background: #fff;
+}
+
+.tableWrap {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  background: rgba(244, 243, 236, 0.5);
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.empty {
+  padding: 18px 12px;
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  background: #fff;
+}
+
+.badge.published {
+  border-color: rgba(0, 140, 60, 0.25);
+  background: rgba(0, 140, 60, 0.06);
+}
+.badge.draft {
+  border-color: rgba(170, 59, 255, 0.25);
+  background: rgba(170, 59, 255, 0.06);
+}
+.badge.archived {
+  border-color: rgba(120, 120, 120, 0.3);
+  background: rgba(120, 120, 120, 0.06);
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+
+.modal {
+  width: min(880px, 100%);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(244, 243, 236, 0.5);
+}
+
+.modalTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 14px;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+}
+
+.footer {
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--text);
+}
